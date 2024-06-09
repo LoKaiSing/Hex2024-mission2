@@ -60,10 +60,17 @@ table {
 
 body {
 	font-family: "Noto Sans", sans-serif;
+  line-height: 1.5;
+  /*助教:這樣子 page 的文字高度就可以被行高撐起來，才會不扁哩。(謝謝助教!!!)*/
   }
 
+  img{
+    vertical-align:middle;
+  }
+
+  /*容器的最大寬度應為 1296px*/
 .head{
-	max-width: 1920px;
+	max-width: 1296px;
 	display:flex;
 	justify-content: space-around;
     align-items: center;
@@ -213,7 +220,7 @@ body {
 
 
 .container {
-	max-width: 1920px;
+	max-width: 1296px;
 	margin: 0 auto;
   }
   
@@ -319,7 +326,7 @@ body {
     width: 100%;
   margin: 0 auto;
 	background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
-	max-width: 1920px;
+	max-width: 1296px;
     padding: 80px 312px;
     background-size: cover;
     display: flex;
@@ -448,9 +455,10 @@ body {
 		padding-left: 12px;
 		padding-right: 12px;
 	}
-    .head>img{
+    /*.head>img{
       margin-right: 318px;
-    }
+    }*/ /*不需要寫(固定 margin 也會在手機寬度時造成 X 軸)*/
+    
   }
 
   @media(max-width:767px){
@@ -471,6 +479,18 @@ body {
     .content
     {
       flex-direction: column;
+    }
+
+    .slogan{
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    .titleMarkTop {
+      right: 56px;
+      bottom: 71px;
+    }
+    .titleMarkDown{
+      right: 93px;
     }
   }
   
